@@ -1,0 +1,7 @@
+# Configuración local del IDE
+.idea/
+
+# Cachés y archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
