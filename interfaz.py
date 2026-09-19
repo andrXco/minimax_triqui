@@ -246,13 +246,6 @@ boton_volver = tk.Button(
 )
 boton_volver.pack(pady=(8, 18))
 
-pie = tk.Label(
-    ventana,
-    text="🕷️ Minimax con Poda Alfa-Beta · Especial Halloween 🕷️",
-    font=("Bahnschrift SemiBold", 11),
-    bg=COLOR_FONDO,
-    fg=COLOR_SECUNDARIO
-)
 pie.pack(pady=(0, 15))
 
 actualizar_interfaz()
