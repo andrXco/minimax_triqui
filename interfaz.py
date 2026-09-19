@@ -44,15 +44,6 @@ titulo = tk.Label(
 )
 titulo.pack(pady=(25, 5))
 
-frase = tk.Label(
-    ventana,
-    text="🎃 Desafía a la IA en una partida terrorífica 👻",
-    font=("Bahnschrift SemiBold", 12),
-    bg=COLOR_FONDO,
-    fg=COLOR_TEXTO
-)
-frase.pack(pady=(0, 12))
-
 etiqueta_inicio = tk.Label(
     ventana,
     text="",
@@ -95,13 +86,13 @@ def actualizar_interfaz():
     tablero = estado["tablero"]
 
     etiqueta_jugadores.config(
-        text=f'🎃 TÚ: {estado["humano"]}        |        💀 IA: {estado["ia"]}'
+        text=f' TÚ: {estado["humano"]}        |         IA: {estado["ia"]}'
     )
 
     if estado["humano"] == "X":
-        etiqueta_inicio.config(text="TÚ INICIAS LA NOCHE")
+        etiqueta_inicio.config(text="TÚ INICIAS")
     else:
-        etiqueta_inicio.config(text="LA IA COMIENZA EL HECHIZO")
+        etiqueta_inicio.config(text="LA IA COMIENZA")
 
     for fila in range(3):
         for columna in range(3):
@@ -144,19 +135,19 @@ def actualizar_interfaz():
 
         if ganador == estado["humano"]:
             mensaje.config(
-                text="👻 ¡GANASTE! 🎃",
+                text=" ¡GANASTE! ",
                 fg=COLOR_EXITO
             )
 
         elif ganador == estado["ia"]:
             mensaje.config(
-                text="💀 LA IA GANO 💀",
+                text=" LA IA GANO ",
                 fg=COLOR_DERROTA
             )
 
         else:
             mensaje.config(
-                text="🕸️ ¡EMPATE! 🕸️",
+                text=" ¡EMPATE! ",
                 fg=COLOR_EMPATE
             )
 
