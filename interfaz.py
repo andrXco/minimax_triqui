@@ -246,8 +246,6 @@ boton_volver = tk.Button(
 )
 boton_volver.pack(pady=(8, 18))
 
-pie.pack(pady=(0, 15))
-
 actualizar_interfaz()
 
 ventana.mainloop()
